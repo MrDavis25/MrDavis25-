@@ -1,0 +1,35 @@
+# Sample student data
+students=[
+{"name":"John","scores":[90,88,95]},
+{"name":"Alice","scores":[70,75,68]},
+{"name":"Cynthia","scores":[85,80,82]},
+{"name":"David',"scores":[50,60,55]},
+{"name":"Ella","scores":[92,95,98]},
+]
+# Calculate averages and assign grades for record in students:
+avg= sum(record["scores"])/ len(record["scores"]) record["average"]= round(avg,2)
+if avg>=90:
+record["grade']="A" elif avg>=75;
+record["grade"]="B"
+elif avg>=60:
+record["grade"]="C"
+elif avg>=45:
+record["grade']="D"
+else:
+record["grade"]="F"
+# from highest to lowest average def get_average(x):
+returnx["average"]
+students.sort(key=get_average,reverse=True)
+#Top student
+top_student=student[0]
+#Final class report
+print("="*40)
+print("CLASS REPORT")
+print("="*40)
+print(f"Class Average:{class_average})
+print(f"Top Student:{top_student['name']}-
+{top_student['average']}")
+print("\nAll Students (sorted by Average):\n")
+for s in students:
+print(f"{s['name']:<10}|Avg; {s['average']:<6} | Grade:{s['grade']}")
+print("="*40)
